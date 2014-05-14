@@ -1,0 +1,146 @@
+{
+	"name":"Burgerama",
+	"thumbnail":"burgerama.png",
+	"screenshot":"burgerama.png",
+    "tags": {
+    "en": ["clean", "menu", "cafe", "bar", "restaurant"],
+    "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
+    "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
+    },
+	"colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#f3a027",
+            "color3":"#0963ab",
+            "color4":"#827d7b",
+            "color5":"#827d7b",
+            "color6":"#0963ab",
+            "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#BDCCC9",
+            "color2":"#e5e4e0",
+            "color3":"#bb5a4a",
+            "color4":"#372f2c",
+            "color5":"#8f8682",
+            "color6":"#372f2c",
+            "color7":"#B3CCC6"
+        },
+        "Swatch 3": {
+            "color1":"#D7D4CC",
+            "color2":"#e5e4e0",
+            "color3":"#bb5a4a",
+            "color4":"#372f2c",
+            "color5":"#8f8682",
+            "color6":"#372f2c",
+            "color7":"#d3d0c6"
+        },
+        "Swatch 4": {
+            "color1":"#DDDDDD",
+            "color2":"#e5e4e0",
+            "color3":"#541515",
+            "color4":"#234A51",
+            "color5":"#8f8682",
+            "color6":"#372f2c",
+            "color7":"#C7CECE"
+        },
+        "Swatch 5": {
+            "color1":"#CACCC5",
+            "color2":"#e5e4e0",
+            "color3":"#bb5a4a",
+            "color4":"#372f2c",
+            "color5":"#8f8682",
+            "color6":"#372f2c",
+            "color7":"#CACCC5"
+        }
+    },
+    "fontSwatch": {
+       "title": "Lobster/Oswald/PT Sans",
+        "font1": {
+            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch2",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font7": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "#ffffff",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch2"
+        },
+        "font8": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Lobster\", Verdana, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit"
+        }
+    }
+}
