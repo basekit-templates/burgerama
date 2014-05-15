@@ -833,7 +833,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 .widget {
-    &.bloglistposts {
+    &.blogpostlist {
         .blog-post-item {
             border-bottom: 1px solid darken(@color-swatch7,10%);
         }
@@ -1203,6 +1203,9 @@ width: 100%;
             padding: 1em;
         }
     }
+    .checkout-empty p {
+        padding: 2em 0;
+    }
     table {
         border-spacing: 0;
         width: 100%;
@@ -1375,7 +1378,7 @@ width: 100%;
             width: auto;
         }
     }
-    .checkout-order-button {
+    .checkout-order-button, .checkout-empty-link {
         padding: 10px;
         margin-top: 20px;
         font-family: @font-swatch7-font-family;
