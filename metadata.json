@@ -10,13 +10,13 @@
 	"colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
+            "color1":"#FDFDFD",
             "color2":"#f3a027",
             "color3":"#0963ab",
             "color4":"#827d7b",
             "color5":"#827d7b",
             "color6":"#0963ab",
-            "color7":"#ffffff"
+            "color7":"#FDFDFD"
         },
         "Swatch 2": {
             "color1":"#BDCCC9",
@@ -56,7 +56,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Lobster/Oswald/PT Sans",
+       "title": "Oswald",
         "font1": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "30px",
