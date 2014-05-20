@@ -2,6 +2,7 @@
 	"name":"Burgerama",
 	"thumbnail":"burgerama.png",
 	"screenshot":"burgerama.png",
+	"templateType":"menu",
     "pageTypes": ["default", "home", "menu"],
     "tags": {
     "en": ["clean", "menu", "cafe", "bar", "restaurant"],
