@@ -63,7 +63,7 @@ body {
                 }
             }
             @media @mobile {
-                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTAyOTFCODhENDQxMTFFMzhFQjhFREQ1Nzc4NjRFOTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTAyOTFCODdENDQxMTFFMzhFQjhFREQ1Nzc4NjRFOTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjYyMUNCQjBGOTkyRjExRTM4QTQ1RURBNTU4MTk5RTRGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYyMUNCQjEwOTkyRjExRTM4QTQ1RURBNTU4MTk5RTRGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wj3fTwAAARtJREFUeNpi/P//PwM1ARMDlQELjNFcVwNjdgFxKRDvBGIPUgyrbWpBcSEnEM+EGgYC7kBsSYmXJwBxGpq8OyUGKmGRjwJidnINfItFnheKyTJwOxD/ROI/BmJbIH5DroFLgXgFmgV3KAnDP0A8EYmfAsT6lCbs80DcgiQ3ixo5pRaIj0LZZkC8FU2eERpRTKRkvSAgvg9le0FdrgblhwLxSyA+AvWNPxALYGQ9NPAKiB2gLpUBYgMgPgPE+4HYGpqrLJFy0kEgTgfim/gKh0dQg04ipUk/IBbGohaUKWSJKW1Aid0CiJsIqFsIxHtIKb7qgVgViBcB8T80uRnQiMQbhtgAKJEnAvEhqNf5gfgCENegJIFBX2IDBBgA9h00zMmC5zwAAAAASUVORK5CYII=);        }
+                }
             }
         }
 }
@@ -71,13 +71,13 @@ body {
 .left {
     background: @color-swatch7;
     z-index: 9999;
-    width: 25%;
+    width: 100%;
     height: 100%;
     padding: 2em;
     text-align: left;
     float: left;
     border-bottom: 2px solid @color-swatch3;
-    @media only screen and (min-width: 1290px) {
+    @media only screen and (min-width: 768px) {
         width: 300px;
     }
     .widget {
@@ -104,9 +104,6 @@ body {
             cursor: text;
         }
     }
-    @media @tablet {
-        display: none;
-    }
 }
 
 .main {
@@ -116,8 +113,8 @@ body {
     width: 74%;
     margin-left: 1%;
     border-bottom: 2px solid @color-swatch3;
-    @media only screen and (min-width: 1290px) {
-        width: 950px;
+    @media only screen and (min-width: 768px) {
+        width: 74%;
         margin-left: 10px;
     }
     @media @tablet {
@@ -201,7 +198,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         ul {
             float: none;
             margin: 0 auto;
-            text-align: center;
             padding: 0;
             @media @tablet {
                 /* Hidden until nav icon is clicked */
@@ -283,14 +279,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                         letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
                         &:after {
-                            content: "\25BC";
-                            font-size: 5px;
-                            position: absolute;
-                            top: 1px;
-                            display: block;
-                            z-index: 9999999;
-                            right: 0;
-                            color: @color-swatch6;
                             @media @tablet {
                                 font-size: 10px;
                                 padding-right: 10px;
@@ -356,11 +344,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     }
 }
 
-.widget .extendednavigation ul li.folder:after {
-    display: none;
+.widget .extendednavigation ul.align-right li.folder:after {
+    left: 5px!important;
+    right: inherit!important;
 }
-
-
 
 /* ===============================
    MENU SECTIONS NAVIGATION
@@ -658,6 +645,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     BUTTON CSS
    =============================== */
 
+
+.widget.button button {
+    margin: 5px 0px;
+}
+
 .widget.button button.btn:hover {
     background-color: @font-swatch7-background-color-hover;
 }
@@ -897,8 +889,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .blog-post-more-link {
-float: left;
-width: 100%;
+    float: left;
+    width: 100%;
 }
 
 /* BLOG SEARCH */
