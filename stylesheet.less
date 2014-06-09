@@ -20,73 +20,34 @@ body {
     }
 }
 
-.tablet-mob {
-    display: none;
-    margin: 0 auto;
-    width: 100%;
-    border-bottom: 2px solid @color-swatch3;
-    @media @tablet {
-        display: block;
-        background: @color-swatch1;
-    }
-    .widget {
-        &.companyaddress, &.clicktocall {
-            float: left;
-            width: 90%;
-            margin: 0 5%; 
-            text-align: center;
-        }
-        &.companyaddress {
-            padding: 0 0 2em;
-            p {
-                padding-bottom: 0;
-            }
-        }
-        &.companyaddress p, &.clicktocall a {
-            color: @color-swatch6;
-        }
-    }
-    .widget.clicktocall {
-        border: 1px solid darken(@color-swatch7,10%);
-        background-color: darken(@color-swatch7,2%);
-        text-align: center;
-        padding: 1em 0;
-        margin-bottom: 2em;
-        a {
-            background-color: transparent;
-            &:hover {
-                @media @tablet{
-                    cursor: text;
-                }
-                @media @mobile {
-                    cursor: pointer;
-                }
-            }
-            @media @mobile {
-                }
-            }
-        }
-}
-
 .left {
     background: @color-swatch7;
-    z-index: 9999;
-    width: 100%;
+    width: 25%;
     height: 100%;
     padding: 2em;
     text-align: left;
     float: left;
     border-bottom: 2px solid @color-swatch3;
-    @media only screen and (min-width: 768px) {
-        width: 300px;
+    @media @tablet {
+        caption-side: top;
+        display: table;
+        width: 100%;
     }
     .widget {
         &.companyaddress, &.clicktocall {
             float: left;
             width: 100%;
+            @media @tablet {
+                width: 90%;
+                margin: 0 5%; 
+                text-align: center;
+            }
         }
         &.companyaddress {
             padding: 2em 0;
+            @media @tablet {
+                padding: 0 0 2em;
+            }
             p {
                 padding-bottom: 0;
             }
@@ -100,8 +61,13 @@ body {
         background-color: darken(@color-swatch7,2%);
         text-align: center;
         padding: 1em 0;
-        a:hover {
-            cursor: text;
+        @media @tablet {
+            margin-bottom: 2em;
+        }
+        a {
+            @media @tablet {
+                background-color: transparent;
+            }
         }
     }
 }
@@ -113,10 +79,6 @@ body {
     width: 74%;
     margin-left: 1%;
     border-bottom: 2px solid @color-swatch3;
-    @media only screen and (min-width: 768px) {
-        width: 74%;
-        margin-left: 10px;
-    }
     @media @tablet {
         width: 100%;
         margin: 1em auto;
@@ -153,7 +115,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       text-align: center;
       float: none;
       @media @tablet {
-        padding: 0.8em 0 0;
+        padding: 0.6em 0 0;
       }
       img {
         max-width: 100%;
@@ -171,13 +133,16 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     }
  }
 
-
-
-
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
-
+nav {
+    @media @tablet {
+        background-color: lighten(@color-swatch6,50%);
+        display: table-header-group;
+        position: relative;
+    }
+}
 .widget {
     &.extendednavigation {
         z-index: 9999;
@@ -185,10 +150,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         position: relative;
         width: 100%;
         margin-bottom: 1em;
-        min-height: 44px;
+        min-height: 56px;
         @media @tablet {
-            background-color: lighten(@color-swatch6,50%);
-            float: left;
+            margin-bottom: 0;
         }
         li {
             ul {
@@ -203,9 +167,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                 /* Hidden until nav icon is clicked */
                 display: none;
                 /* Then these styles are applied */
+                float: left;
                 width: 100%;
                 margin: 0;
-                padding: 44px 0 0;
+                padding: 56px 0 0;
             }
             li {
                 float: left;
@@ -323,7 +288,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                    width: 20px;
                    height: 44px;
                    position: absolute;
-                   top: -3px;
+                   top: 7px;
                    left: 48.5%;
                    &:hover {
                        cursor: pointer;
@@ -1031,7 +996,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     }
 }
 
-
 /* ===============================
     ECOM - PRODUCT
    =============================== */
@@ -1466,6 +1430,3 @@ hr {
         text-align: center;
     }
 }
-
-
-
