@@ -50,7 +50,7 @@ body {
             width: 100%;
             @media @tablet {
                 width: 90%;
-                margin: 0 5%; 
+                margin: 0 5%;
                 text-align: center;
             }
         }
@@ -72,7 +72,7 @@ body {
         background-color: darken(@color-swatch7,2%);
         text-align: center;
         padding: 1em 0;
-        
+
 
         @media @tablet {
             margin-bottom: 2em;
@@ -222,7 +222,7 @@ nav {
                                 }
                             &:first-child {
                                 border-top: 1px solid darken(@color-swatch7,10%);
-                            }    
+                            }
                         }
                     }
                 }
@@ -249,8 +249,8 @@ nav {
                 }
 
                 &.folder {
-                    /* Folder dropdown arrow BG style goes Here */  
-                    margin-right: 20px;            
+                    /* Folder dropdown arrow BG style goes Here */
+                    margin-right: 20px;
                     cursor: pointer;
                     background-image: none;
                     .text {
@@ -280,7 +280,7 @@ nav {
                         li {
                             a {
                                 .text {
-                                    
+
                                     &:after {
                                         content: "";
                                     }
@@ -420,7 +420,7 @@ nav {
     .review-link {
       margin-left: 14px;
       font-size: bkscale(@font-swatch5-font-size, 0.8);
-      a { 
+      a {
         background-color: @color-swatch3;
         color: @color-swatch1;
         padding: 0.2em 0.7em;
@@ -456,7 +456,8 @@ nav {
    CONTACT FORM WIDGET
    =============================== */
 
-.contactform.widget {
+.contactform.widget,
+.advancedcontactform {
   .form-group {
     margin-bottom: 1em;
   }
@@ -511,7 +512,7 @@ nav {
         border-bottom: none;
         margin-bottom: 0;
       }
-     
+
       // footer
       a, time + span, time {
         font-size: bkscale(@font-swatch5-font-size, 0.8);
@@ -536,7 +537,7 @@ nav {
           width: (@twitterProfilePicSize * 0.55);
           height: (@twitterProfilePicSize * 0.55);
         }
-        
+
         img {
           width: 100%;
           height: auto;
@@ -712,9 +713,9 @@ hr {
 
 // ======= Widget: Sign up form
 .widget.signupform {
- 
 
-  
+
+
   .widget.signupform fieldset {
     padding: 0;
     border: 0;
@@ -753,7 +754,7 @@ hr {
       -ms-flex-align: center;
       align-items: center;
 
-     
+
 
       label {
         // Flex
